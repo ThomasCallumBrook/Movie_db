@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset="utf-8">
+  <title>MovieDB</title>
+</head>
+<body>
+<h1><%= @name %></h1>
+<ul>
+  <% @movies.each do |movie| %>
+    <li><a href="/movies/<%=movie.id%>"><%=movie.title%></li></a>
+  <% end %>
+</ul>
+</body>
+</html>
